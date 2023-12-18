@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../img/backgroundimg.jpg"); }
+
+main h1 {
+  text-align: center; }
+
+main h2 {
+  font-style: italic; }
+
+main .sobrenosotros {
+  display: flex;
+  text-align: center; }
+
+main .fotos {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 40%);
+  gap: 2rem;
+  margin: 3rem 2rem; }
+  main .fotos img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+    /*mq de tablet*/
+@media screen and (min-width:600px){
+   
+    .main{grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 50%);
+    }
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    
+   
+        .fotos{
+            grid-template-columns: repeat(2, 1.5fr);
+            grid-template-rows: repeat(2, 50%);
+            height: 80vh;
+        }
+    
+    }
+
+    /*mq escritorio*/
+    @media screen and (min-width:1024px){
+        header{
+            flex-direction: row;
+        }
+        .embarcacion{
+            display: block;
+        }   
+        .fotos .profesor{
+            grid-column: span 2;
+            height: 80vh;
+        }
+        
+        }
+        
+        
