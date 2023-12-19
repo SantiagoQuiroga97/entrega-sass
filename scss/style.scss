@@ -3,7 +3,8 @@
 @import "utilities/variables";
 @import "utilities/listas";
 @import "utilities/mixin";
-
+@import "animate.css";
+//
 
 
 body {
@@ -39,6 +40,5 @@ main {
     
 }
 footer{
-    color: black;
-    justify-content: center;
+    @include predeterminado;
 }
