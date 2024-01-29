@@ -1,22 +1,24 @@
 @import url(animate.css);
+/*imagen de fondo de la pagina*/
 body {
   background-color: url("../img/backgroundazul.jpg"); }
-
+/*titulo central*/
 main h1 {
   text-align: center; }
-
+/*sub titulo*/
 main h2 {
   font-style: italic; }
-
+/*Altura imagen main*/
 main .sobrenosotros {
   display: flex;
   text-align: center; }
 
+/*responsive*/
 main .fotos {
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 40%);
+  grid-template-rows: repeat(3, 60%);
   gap: 2rem;
   margin: 3rem 2rem; }
   main .fotos img {
@@ -28,4 +30,9 @@ main .fotos {
 
 footer {
   color: black;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
+.footer-galeria {
+  height: 100px;
+}
+
